@@ -16,7 +16,6 @@ a{
     overflow-y: auto;
     overflow-x: hidden;
     height: 150vh;
-
     perspective: 10px;
     background-color: rgb(0, 0, 0);
     background-repeat: no-repeat;
@@ -38,7 +37,6 @@ body {
     height: 100%;
     margin-top: 0;
     transform: translateZ(-1000px) scale(101);
-
     z-index: -1;
     position: relative;
     overflow:hidden;
@@ -49,7 +47,7 @@ body {
 }
 
 .fuzzy-overlay{
-    position:absolute;
+    position: absolute;
     inset: -200%;   
     background-image: url(noise.png);
     opacity: 8%;
@@ -58,7 +56,6 @@ body {
 }
 
 #text {
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,7 +67,6 @@ body {
 .letters {
     display: flex;
     flex-direction: row;
-    
 }
 
 #text span {
@@ -80,25 +76,19 @@ body {
     font-size: 1.2rem;
     color: rgb(9, 227, 49);
     text-shadow: -3px 27px 9px rgba(0,0,0,1);
-    
- 
 }
+
 #text p{
     font-size: 1.2rem;
 }
+
 #text p span{
     color: rgb(47, 42, 215);
-
 }
-
-
-
-
 
 .fetch .emblem{
 display: flex;
 font-size: 0.9rem;
-
 max-width :100%;
 margin-left: 12vw;
 
@@ -136,156 +126,24 @@ margin-top: 5rem;
 
 
 
-/* Keyframes */
-
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes appear-slide {
-    from {
-        opacity: 0%;
-        transform: translateY(-50%)
-    }
-    to {
-        opacity: 100%;
-        transform: translateY(0);
-    }
-}
-
-@keyframes shift{
-    from{
-        transform: translateX(10%) translateY(10%);
-    }
-    to{
-        transform: translateX(-10%) translateY(-10%);
-    }
-}
-
-
-
-/* SVGs */
 
 footer {
     transform: translateZ(2px);
     position: relative;
-    z-index: 100;
+    z-index: 2;
     width: 100%;
-
     padding: 0;
 }
 
 
 
-.svg-area {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-
-}
-#svg-area-1 {
-    height: 50vh;
-    background-color:rgb(78, 31, 31);
-    z-index: 2;
-    clip-path: url(#clip-2);
-
-}
-
-
-#svg-area-2 {
-    height: 30vh;
-    background-color:rgb(53, 18, 18);
-    z-index: 3;
-    clip-path: url(#clip-2);
-}
-
-#svg-area-3 {
-    height: 45vh;
-    background-color:rgb(99, 34, 34);
-    z-index:2;
-    clip-path: url(#clip-3);
-}
-
-#svg-area-4 {
-    height: 50vh;
-    background-color:rgb(55, 23, 23);
-    z-index:1;
-    clip-path: url(#clip-4);
-}
-#svg-area-5{
-    height: 20vh;
-    background-color:rgb(85, 40, 40);
-    z-index:10;
-    clip-path: url(#clip-5)
-}
-#svg-area-6{
-    height: 10vh;
-    background-color:rgb(122, 69, 69);
-    z-index:10;
-    clip-path: url(#clip-5)
-}
-#svg-area-7{
-    height: 15vh;
-    background-color:rgba(102, 86, 86, 0.575);
-    z-index:10;
-    clip-path: url(#clip-5)
-}
-#svg-area-8{
-    height: 7vh;
-    background-color:rgba(163, 109, 109, 0.322);
-    z-index:10;
-    clip-path: url(#clip-5)
-}
-#svg-area-9{
-    height: 5vh;
-    background-color:rgb(129, 87, 87);
-    z-index:10;
-    clip-path: url(#clip-5)
-}
-#svg-area-10{
-    height: 40vh;
-    background-color:rgb(78, 57, 57);
-    z-index:100;
-    clip-path: url(#clip-6)
-}
-#svg-area-11{
-    height: 30vh;
-    background-color:rgb(51, 40, 40);
-    z-index:101;
-    clip-path: url(#clip-6)
-}
-
-#svg-area-12{
-    height: 20vh;
-    background-color:rgb(27, 23, 23);
-    z-index:102;
-    clip-path: url(#clip-6)
-}
-
-#svg-area-13{
-    height: 10vh;
-    background-color:rgb(3, 3, 3);
-    z-index:103;
-    clip-path: url(#clip-6)
-}
-
-.svg {
-    position: absolute;
-    width: 0;
-    height: 0;
-}
 
 .second-page{
 
     width: 100%;
     margin-top :0;
     top: 0;
-    z-index: 500000;
+    z-index: 3;
     position:absolute;
     display: flex;
     flex-direction: column;
@@ -309,8 +167,8 @@ footer {
 }
 
 nav{
-    height: 50px;
-    z-index: 99999999999;
+    height: 70px;
+    z-index: 100;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -320,17 +178,14 @@ nav{
     top: 0;
     left: 0;
     right: 0;
-    opacity: 100%;
-    padding-top: 4vh;
     backdrop-filter: blur(10px);
-    padding:1%;
+    padding: 1%;
     opacity: 0;
     transition: opacity .3s ease, height .3s ease, padding .3s ease;
 }
 .current-section{
     color:blue;
 }
-
 .nav-visible{
     opacity: 100%;
     transition: opacity .3s ease, height .3s ease, padding .3s ease;
@@ -338,18 +193,15 @@ nav{
 
 
 nav button{
-
     font-weight: bolder;
     margin-right: 3em;
     padding: 0;
     border: none;
     background: none;
-    font: inherit;
-    color: inherit;
     cursor: pointer;
-    outline: inherit;
     color:rgb(163, 49, 49);
     transition: transform 0.3s ease-in-out;
+    font-size: 120%;
 }
 nav button:hover{
     color:rgb(255, 255, 255);
@@ -380,14 +232,7 @@ nav button:hover{
     align-items: space-around;
     width: 60vw;
     padding: 0;
-
-    z-index: 100000000000000;
-
-
-
-
-
-
+    z-index: 5;
 }
 
 #about-section{
@@ -463,22 +308,6 @@ nav button:hover{
 
 
 
-@keyframes slide-rightwards{
-    from{
-        transform: translateX(50%);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
-@keyframes slide-leftwards{
-    from{
-        transform: translateX(-50%)
-    }
-    to{
-        transform: translateX(0%)
-    }
-}
 
 
 
@@ -503,6 +332,8 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 20;
+    margin-top: -2vh;
 
 }
 
@@ -523,14 +354,6 @@ h2{
 
 
 
-}
-@keyframes smooth-background {
-    from {
-        background-color: rgb(71, 117, 202);
-    }
-    to {
-        background-color: white;
-    }
 }
 
 .project-card{
@@ -566,6 +389,8 @@ h2{
 #project-footer{
     margin-top: auto;
     width: 100%;
+    height: 100px;
+    position: relative;
 }
 
 
@@ -577,8 +402,169 @@ h2{
 .page-4{
     position: relative;
     bottom: 0;
-    height: 120vh;
+    height: 110vh;
     width: 100vw;
-
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
+    margin-top: -4vh;
+    z-index: 20;
 }
+.page-4 h2{
+    color: green;
+    margin-top: 2%;
+}
+
+
+
+/* Keyframes */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes appear-slide {
+    from {
+        opacity: 0%;
+        transform: translateY(-50%)
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+@keyframes shift{
+    from{
+        transform: translateX(10%) translateY(10%);
+    }
+    to{
+        transform: translateX(-10%) translateY(-10%);
+    }
+}
+@keyframes slide-rightwards{
+    from{
+        transform: translateX(50%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes slide-leftwards{
+    from{
+        transform: translateX(-50%)
+    }
+    to{
+        transform: translateX(0%)
+    }
+}
+@keyframes smooth-background {
+    from {
+        background-color: rgb(71, 117, 202);
+    }
+    to {
+        background-color: white;
+    }
+}
+
+/* SVGs */
+
+.svg-area {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+#svg-area-1 {
+    height: 50vh;
+    background-color:rgb(78, 31, 31);
+    z-index: 2;
+    clip-path: url(#clip-2);
+
+}
+#svg-area-2 {
+    height: 30vh;
+    background-color:rgb(53, 18, 18);
+    z-index: 3;
+    clip-path: url(#clip-2);
+}
+#svg-area-3 {
+    height: 45vh;
+    background-color:rgb(99, 34, 34);
+    z-index:2;
+    clip-path: url(#clip-3);
+}
+#svg-area-4 {
+    height: 50vh;
+    background-color:rgb(55, 23, 23);
+    z-index:1;
+    clip-path: url(#clip-4);
+}
+#svg-area-5{
+    height: 20vh;
+    background-color:rgb(85, 40, 40);
+    z-index:10;
+    clip-path: url(#clip-5)
+}
+#svg-area-6{
+    height: 10vh;
+    background-color:rgb(122, 69, 69);
+    z-index:10;
+    clip-path: url(#clip-5)
+}
+#svg-area-7{
+    height: 15vh;
+    background-color:rgba(102, 86, 86, 0.575);
+    z-index:10;
+    clip-path: url(#clip-5)
+}
+#svg-area-8{
+    height: 7vh;
+    background-color:rgba(163, 109, 109, 0.322);
+    z-index:10;
+    clip-path: url(#clip-5)
+}
+#svg-area-9{
+    height: 5vh;
+    background-color:rgb(129, 87, 87);
+    z-index:10;
+    clip-path: url(#clip-5)
+}
+#svg-area-10{
+    height: 40vh;
+    background-color:rgb(114, 71, 71);
+    z-index:6;
+    clip-path: url(#clip-6)
+}
+#svg-area-11{
+    height: 32vh;
+    background-color:rgb(66, 47, 47);
+    z-index:6;
+    clip-path: url(#clip-7)
+}
+#svg-area-12{
+    height: 28vh;
+    background-color:rgb(46, 37, 37);
+    z-index:6;
+    clip-path: url(#clip-6)
+
+}
+#svg-area-13{
+    height: 10vh;
+    background-color:rgb(15, 13, 13);
+    z-index:6;
+    clip-path: url(#clip-7)
+}
+#svg-area-14{
+    height: 10vh;
+    background-color:rgb(0, 0, 0);
+    z-index:6;
+    clip-path: url(#clip-6)
+}
+.svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+
