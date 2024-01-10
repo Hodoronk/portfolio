@@ -11,6 +11,7 @@
     
     
     <div class="wrapper">
+
         <div class="nav-placeholder"></div>
         <nav>
             <button class ='nav-btn' id = 'home-btn' data-section ="home">Home</button>
@@ -84,7 +85,7 @@
         <p><span class ='red'>Github:</span><span id ='clickable'> <a href="https://github.com/Hodoronk">https://github.com/Hodoronk</a></span></p>
         <p><span class ='red'>Email Address:</span><span> tanasa.andrei@hotmail.com</span></p>
         <p><span class ='red'>Resume:</span><span id ='clickable'> myresume.pdf</span></p>
-        <p><span class ='red'>Uptime:</span><span> 5:23:45 (aicea gen vine un timer)</span></p>
+        <p><span class ='red'>Uptime:</span><span> 5:23:45</span></p>
         <p><span class ='red'>My projects</span><span> below</span></p>
         <div class="grid"></div>
     </div>
@@ -132,9 +133,6 @@
     </clipPath>
 </svg>
 
-
-<div class="container-2" >
-
     <footer >
         <div class= "svg-area" id="svg-area-1"></div>
         <div class= "svg-area" id="svg-area-2"></div>
@@ -147,8 +145,9 @@
         <div class="main-about" id="about">
 
             <div class="hidden-left" id ='about-section'>
-                <img src="hoodie-man.svg" alt="">
+                <img src="hoodie-man.svg" id = 'avatar' alt="">
                 <div class="about-text">
+                    <p>Hi, I'm Andrei :) </p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Aliquam molestie orci ac tempor molestie.
                         Nam porttitor metus nec nisi iaculis, a maximus eros consequat.
@@ -157,15 +156,9 @@
                         ultrices sapien. Orci varius natoque penatibus et magnis dis
                         parturient montes, nascetur ridiculus mus. Mauris gravida libero 
                         at scelerisque pharetra.
+                        <div id="learning"><p>Currently learning</p><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/></div>
                     </p>
-                    <p>
-                        Pellentesque rhoncus tincidunt consectetur. Praesent non est eu
-                        nisi dictum tempor. Pellentesque eu eros enim. Duis pulvinar
-                        uctus felis et consequat. Phasellus pharetra turpis at gravida 
-                        sodales. Nullam porttitor, ante vitae semper pharetra, nulla risus 
-                        varius nibh, ac blandit elit arcu sed ex. Suspendisse varius bibendum 
-                        velit eget vehicula.
-                    </p>
+
                 </div>
             </div>
             <div class="hidden-right" id ='icons'>
@@ -173,11 +166,11 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+
             </div>
         </div>
         <svg class ='svg' viewBox="0 0 100 100" height="50" width="50">
@@ -202,34 +195,32 @@
             <div class= "svg-area" id="svg-area-9"></div>
         </footer>
 
-        <div class="page-3" id="projects" >
+
+
+
+
+        <div class="page-3">
             <h2>projects</h2>
-            <div class="project-card">
-                <img src="hurin.jpg" alt="">
-                <div class = 'card-right'>
-                    <h3>Battlehsips</h3>
-                    <p>Battleship game designed using JS, CSS, and HTML. Strategically position fleets on a grid, aiming to sink all opponent ships
-                    </p>
-                        <p>What I learned: </p>
-                        <p>Github Link: <a href="https://github.com/Hodoronk/Battleships">https://github.com/Hodoronk/Battleships</a></p>
-                        <p>Web address: </p>
-                </div>
-            </div>
 
-
-
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
+            <div id="project-grid">
+                <div class="project-card"><p class="text">WEATHER APP</p></div>
+                <div class="project-card"><p class="text">BATTLESHIPS</p></div>
+                <div class="project-card"><p class="text">TO DO LIST</p></div>
+                <div class="project-card"><p class="text">LIBRARY</p></div>
+                <div class="project-card"><p class="text">BINARY SEARCH TREES</p></div>
+                <div class="project-card"><p class="text">LINKED LISTS</p></div>
+            </div>  
+            <div id = 'project-footer'></div>
         </div>
+
+
+     
+        <div class="page-4">
+            <h2>contact</h2>
+        </div>
+
+        
     </div>
-
-</div>
-
-</div>
-
-
 
 
 
@@ -237,6 +228,6 @@
 
     
 
-
+</div>
 </body>
 </html>
