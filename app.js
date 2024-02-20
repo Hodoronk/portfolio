@@ -7,6 +7,7 @@ const homeBtn = document.getElementById('home-btn')
 const aboutBtn = document.getElementById('about-btn')
 const projectsBtn = document.getElementById('projects-btn')
 const navButtons = document.querySelectorAll('.nav-btn')
+const pageFour = document.querySelector('.page-4')
 
 
 
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
   rightObserver.observe(hiddenRight);
 
 
-  let scrollPoint = 1400;
+  let scrollPoint = 1000;
   wrapper.addEventListener('scroll', () => {
 
 
@@ -58,40 +59,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
- 
+ // scro
+  document.addEventListener('DOMContentLoaded', function() {
+    const navButtons = document.querySelectorAll('.nav-btn');
 
-  // Section highlight
+    navButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const sectionId = this.getAttribute('data-section');
+            const section = document.getElementById(sectionId);
 
-  wrapper.addEventListener('scroll', () => {
-    const scrollPosition = wrapper.scrollTop;
-
-    navButtons.forEach((button) => {
-      const sectionId = button.dataset.section;
-      const sectionElement = document.getElementById(sectionId)
-      if (sectionElement) {
-        const sectionRect = sectionElement.getBoundingClientRect()
-        if (sectionRect.top <= 0 && sectionRect.bottom > 0) {
-          console.log(sectionRect.bottom)
-          button.classList.add('current-section')
-        } else {
-          button.classList.remove('current-section')
-        }
-      }
-    })
-  })
-
-
-// Nav Clicks
-
-navButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const sectionId = button.dataset.section;
-    const sectionElement = document.getElementById(sectionId)
-    const sectionRect = sectionElement.getBoundingClientRect()
-    console.log(sectionRect)
-    wrapper.scroll({
-      top: sectionRect.top,
-      behavior: "smooth"
-    })
-  })
-})
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
