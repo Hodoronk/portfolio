@@ -402,7 +402,7 @@ h2{
 .page-4{
     position: relative;
     bottom: 0;
-    height: 120vh;
+    height: 160vh;
     width: 100%;
     background-image: linear-gradient(to bottom, #000000, #0d0c0c, #161515, #1e1c1c, #252322);
     margin-top: -4vh;
